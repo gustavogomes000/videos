@@ -1,0 +1,13 @@
+{
+  "crons": [
+    {
+      "path": "/api/fila/rodar-cron",
+      "schedule": "*/1 * * * *"
+    }
+  ],
+  "functions": {
+    "src/app/api/fila/rodar-cron/route.ts": { "maxDuration": 60 },
+    "src/app/api/fila/rodar/route.ts": { "maxDuration": 60 },
+    "src/app/api/importar/oficial/route.ts": { "maxDuration": 60 }
+  }
+}
